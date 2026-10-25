@@ -1,0 +1,6 @@
+# Desktop/Android builds and signing key — local only, never commit
+tabtibiq-windoz/
+*.exe
+*.apk
+*.keystore
+نسخ-قديمة-*/

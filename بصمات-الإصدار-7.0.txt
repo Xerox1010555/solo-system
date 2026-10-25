@@ -1,0 +1,26 @@
+النظام — Solo Edition 7.0
+بصمات الإصدار (SHA-256) — 2026-10-22
+
+الملف | الحجم بالبايت | SHA-256
+-----|--------------|--------
+تطبيق-ويندوز/النظام-7.0.0-Setup.exe | 118283497 | 0d748ef4b3c0511909b32aefea7de3466024caeed9f6a8efc943a0005859a7ea
+تطبيق-ويندوز/النظام-7.0.0-Portable.exe | 118024349 | d378322bd0bd6c2430770bfbf3d01039790dfaf45cf7394b602b52c213955737
+تطبيق-أندرويد/النظام-7.0.apk | 4065834 | e733937e12bfe8e8af441d22a3bf95ac8ada198a8fe1c27a327b008841620b85
+التطبيق-المحسن/index.html | 334664 | f7e672ca59af2c6e9156566aab0dcd003f2fc199598f30e3ce55a38450605779
+التطبيق-المحسن/assets/bg9.jpg | 107120 | ed6c8b85fa53050f53893f7593570dceed934eaa0bb5dc22596c09087d1c868b
+التطبيق-المحسن/assets/bg9b.jpg | 88543 | 5eb1ccdf90b37ddd37f622b6b53063474a1c47dfb2a63aa15a099770d99a9084
+C:/zbuild/win/main.js (محشو داخل app.asar) | - | 2efb257b56b9cb7f8a3fb39a1a71107e47e164f09b6d472a527ce63c83b8719d
+
+معلومات البناء:
+- نسخة المصدر: v7.0 — المفتاح sl_system_v7 — APP_VER = 7.0
+- Windows: Electron 44.7.0 — NSIS + Portable — x64 — electron-builder 26.15.3
+- Android: Capacitor — applicationId com.gamify.rewards — versionCode 7 — versionName 7.0 — minSdk 24 — targetSdk 36
+- شهادة توقيع APK: CN=Rewards System, OU=Apps, O=Amier, L=Cairo, C=EG
+- SHA-256 لشهادة APK: b847760c605bf993a240801376a336ccc1dca4334d3ce9ef86f549a41330660b
+
+ملاحظات:
+- تم التحقق من تطابق index.html داخل Windows app.asar وداخل APK مع المصدر أعلاه (أيضًا bg9.jpg وbg9b.jpg وmain.js).
+- هذا البناء يضيف قسم «التواصل مع المطور» في آخر الإعدادات: شكوى / اقتراح / رسالة + واتساب مباشر على 01008655235 (wa.me/201008655235) مع رسالة جاهزة فيها اسم اللاعب والإصدار والتاريخ، وزر نسخ الرقم.
+- روابط واتساب تفتح في المتصفح الخارجي (Electron setWindowOpenHandler → shell.openExternal) بدل نافذة داخلية.
+- إصدارات ويندوز غير موقّعة بشهادة Code Signing عامة؛ قد يمنعها Smart App Control.
+- احتفظ بهذا الملف مع الحزم للنشر والتحقق من سلامة الملفات.
