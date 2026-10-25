@@ -120,9 +120,9 @@
 
 ### ويندوز
 ```
-copy التطبيق-المحسن\index.html C:\zbuild\win\index.html
-copy التطبيق-المحسن\assets\bg9.jpg C:\zbuild\win\assets\bg9.jpg
-copy التطبيق-المحسن\assets\bg9b.jpg C:\zbuild\win\assets\bg9b.jpg
+copy index.html C:\zbuild\win\index.html
+copy assets\bg9.jpg C:\zbuild\win\assets\bg9.jpg
+copy assets\bg9b.jpg C:\zbuild\win\assets\bg9b.jpg
 cd C:\zbuild\win
 $env:EB_UNINSTALLER_READER='1'
 npx electron-builder --win nsis portable --x64
@@ -133,10 +133,10 @@ npx electron-builder --win nsis portable --x64
 
 ### أندرويد
 ```
-copy التطبيق-المحسن\index.html C:\zbuild\android\www\index.html
+copy index.html C:\zbuild\android\www\index.html
 mkdir C:\zbuild\android\www\assets
-copy التطبيق-المحسن\assets\bg9.jpg C:\zbuild\android\www\assets\bg9.jpg
-copy التطبيق-المحسن\assets\bg9b.jpg C:\zbuild\android\www\assets\bg9b.jpg
+copy assets\bg9.jpg C:\zbuild\android\www\assets\bg9.jpg
+copy assets\bg9b.jpg C:\zbuild\android\www\assets\bg9b.jpg
 cd C:\zbuild\android
 npx cap copy android
 cd android
