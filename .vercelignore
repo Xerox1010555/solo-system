@@ -1,0 +1,6 @@
+تطبيق-ويندوز/
+تطبيق-أندرويد/
+*.exe
+*.apk
+*.keystore
+node_modules/
