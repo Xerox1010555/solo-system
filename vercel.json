@@ -4,5 +4,15 @@
     { "src": "assets/**", "use": "@vercel/static" },
     { "src": "*.md", "use": "@vercel/static" },
     { "src": "*.txt", "use": "@vercel/static" }
+  ],
+  "headers": [
+    {
+      "source": "/(.*)",
+      "headers": [
+        { "key": "X-Content-Type-Options", "value": "nosniff" },
+        { "key": "Referrer-Policy", "value": "strict-origin-when-cross-origin" },
+        { "key": "X-Frame-Options", "value": "SAMEORIGIN" }
+      ]
+    }
   ]
 }
